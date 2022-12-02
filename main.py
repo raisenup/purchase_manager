@@ -3,10 +3,7 @@ import tasks
 
 def main():
 	try:
-
-		# tasks.user_auth()
-		tasks.table()
-
+		tasks.user_auth()
 	except Exception as e:
 		print(e)
 
