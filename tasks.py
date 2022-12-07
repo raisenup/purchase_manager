@@ -15,7 +15,7 @@ data = [t.field_names]
 
 
 def user_auth():
-	print('''============AUTHENTICATION============''')
+	print('============AUTHENTICATION============')
 	is_registered = input('Are you registered?(y/n)\n')
 	if is_registered == 'y':
 		login = input('Input login:\n')
@@ -36,7 +36,7 @@ def user_auth():
 			return 0
 	elif is_registered == 'n':
 		os.system('cls' if os.name == 'nt' else 'clear')
-		print('''============REGISTER============''')
+		print('============REGISTER============')
 		new_login = input('Input new login:\n')
 		new_password = input('Input new password:\n')
 		new_path = input('Input new path to your table:\n')
@@ -56,7 +56,7 @@ def register(login, password, path, file_path='./UsersData/users.csv'):
 
 
 def table():
-	print('''============TABLE============''')
+	print('============TABLE============')
 	product = input('Input product:\n')
 	category = input('Input category:\n')
 	amount = input('Input amount:\n')
@@ -78,7 +78,7 @@ def table():
 
 
 def convert(path):
-	print('''============CONVERT============''')
+	print('============CONVERT============')
 	ext_to_convert = input('What file extension to convert the file to?(csv/txt)')
 	if ext_to_convert == 'csv':
 		name = input('Input file name:\n')
